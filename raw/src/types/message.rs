@@ -735,10 +735,10 @@ pub struct Sticker {
     pub thumb: Option<PhotoSize>,
     /// Emoji associated with the sticker.
     pub emoji: Option<String>,
-    /// File size.
-    pub file_size: Option<Integer>,
     /// Name of the sticker set to which the sticker belongs
     pub set_name: Option<String>,
+    /// File size.
+    pub file_size: Option<Integer>,
 }
 
 /// This object represents a video file.
@@ -778,6 +778,7 @@ pub struct Voice {
 pub struct VideoNote {
     /// Unique identifier for this file.
     pub file_id: String,
+    /// Video width and height (diameter of the video message) as defined by sender
     pub length: Integer,
     /// Duration of the video in seconds as defined by sender.
     pub duration: Integer,
@@ -798,6 +799,8 @@ pub struct Contact {
     pub last_name: Option<String>,
     /// Contact's user identifier in Telegram.
     pub user_id: Option<Integer>,
+    /// Additional data about the contact in the form of a vCard
+    pub vcard: Option<String>,
 }
 
 /// This object represents a point on the map.
@@ -820,6 +823,8 @@ pub struct Venue {
     pub address: String,
     /// Foursquare identifier of the venue.
     pub foursquare_id: Option<String>,
+    /// Foursquare type of the venue.
+    pub foursquare_type: Option<String>,
 }
 
 /// This object represent a user's profile pictures.
