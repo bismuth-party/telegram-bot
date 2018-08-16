@@ -13,6 +13,8 @@ pub struct User {
     pub last_name: Option<String>,
     /// User‘s or bot’s username.
     pub username: Option<String>,
+    /// Bool differentiating bots and users.
+    pub is_bot: Option<bool>,
 }
 
 /// This object represents a group.
