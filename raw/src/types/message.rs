@@ -737,6 +737,8 @@ pub struct Sticker {
     pub emoji: Option<String>,
     /// File size.
     pub file_size: Option<Integer>,
+    /// Name of the sticker set to which the sticker belongs
+    pub set_name: Option<String>,
 }
 
 /// This object represents a video file.
