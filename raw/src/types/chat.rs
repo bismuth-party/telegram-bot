@@ -118,6 +118,8 @@ impl<'de> Deserialize<'de> for Chat {
                     username: raw.username,
                     first_name: required_field!(first_name),
                     last_name: raw.last_name,
+                    is_bot: None,
+                    language_code: None,
                 })
             }
             "group" => {
